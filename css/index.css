@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
 .body{
-    background-color: var(--up);
+  
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -68,7 +68,7 @@ a:hover{
           background-color: var(--up);
       }
     .body{
-        background-color: var(--up);
+       
         height: 700px;
         padding-top: 10px;
         padding-bottom: 10px;

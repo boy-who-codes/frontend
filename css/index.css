@@ -1,141 +1,98 @@
-@import "fonts.css";
 
-.left{
-   
-    height: 100vh;
-    width: 100%;
-    background-image: url("../images/login.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.right{
-    float: right;
-    width: 100%;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
 .body{
-    width: 100%;
-    height: 100vh;
+    background-color: var(--up);
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 10px;
-    grid-auto-rows: 100px;
-    grid-template-areas: 
-      "a a a a b b b b"
-      "a a a a b b b b";
-    
-    align-items: start;
-  }
-  .item1 {
-    grid-area: a;
-  }
-  .item2 {
-    grid-area: b;
-    width: 100%;
-  }
-.form{
-    width: 100%;
+.sub-body{
+    width: 60%;
     height: 70vh;
-  
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
     
-    
-}
-.form h1 , h6 { 
+    font-weight:bold;
+    position: absolute;
+    margin: auto;
     font-family: 'Nunito', sans-serif;
-    text-align: center;
-   
-}
-.form h3{
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-form{
-    width: 80%;
-}
-.form .nor{
-    font-family: 'Poppins', sans-serif;
-    background-color: transparent;
-    margin-top: 25px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    line-height:30px;
+    letter-spacing: 0em;
+    text-align: left;
     color: #fff;
-    padding: 10px;
-    border-color: transparent;
-    outline: none;
-    border-bottom-color: #fff;
-    width: 100%;
 
 }
-.pass{
-    width: 100%;
-    border-bottom:2px solid white;
+.sub-body p{
+    font-size: 15px;
+    margin-top: 10px;
 }
-.pass input{
+.p{
+    font-size: 25px;
     font-family: 'Poppins', sans-serif;
-    background-color: transparent;
-    margin-top: 25px;
-    color: #fff;
-    padding: 10px;
-    border-color: transparent;
-    outline: none;
-   
-    width: 95%;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::-webkit-input-placeholder { /* Edge */
     color: #fff;
-    opacity: 1; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #fff;
   }
   
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  ::placeholder {
     color: #fff;
   }
-  .buttons{
-    width: 70%;
-    margin-top: 25px;
-    float: left;
-    align-items: left;
-  }
-  .in , .up{
-      float: left;
-      padding: 5px;
-      padding-left: 15px;
-      padding-right: 15px;
-      margin-right:10px;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 500;
-  }
-  .in{
-      color: #1A191C;
-      background-color: #0BBFBF;
-      border: none;
-      outline: none;
-      border-radius: 5px;
-
-  }
-  .up{
-      color: #0BBFBF;
-      background-color: transparent;
-      border: 1px #0BBFBF;
-  }
+.login{
+    width: 100%;
+    background-color: var(--second);
+    border: 0px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+a:hover{
+    text-decoration: none;
+}
   @media only screen and (max-width:700px) {
-    .left , .item2{
-        visibility: none;
-        width: 0px;
-    }
-    .form{
+    .body{
+        background-color: var(--up);
+        height: auto;
+        width: 100%;
         position: absolute;
         margin: auto;
         top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
-        bottom: 0;
-        width: 90%;
-        height: 70vh;
     }
+    .sub-body{
+        width: 65%;
+        height: 70vh;
+        
+        font-weight:bold;
+        position: absolute;
+        margin: auto;
+        font-family: 'Nunito', sans-serif;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    
+        line-height:30px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #fff;
+    
+    }
+ 
 }
